@@ -1,8 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hCy-WA-WEX">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Flight-->
+        <scene sceneID="yzc-KC-4d0">
+            <objects>
+                <controller identifier="Flight" hidesWhenLoading="NO" id="hCy-WA-WEX">
+                    <items>
+                        <group width="1" alignment="left" id="3N0-qh-SSV">
+                            <items>
+                                <imageView width="40" height="40" alignment="left" image="Logo" id="VXa-T1-yXD">
+                                    <color key="tintColor" red="0.98039215686274506" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                </imageView>
+                                <group alignment="left" layout="vertical" spacing="0.0" id="RN5-vf-yBY">
+                                    <items>
+                                        <label alignment="left" text="Flight 123" id="qxN-Yy-ihV">
+                                            <color key="textColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label alignment="left" text="MEL to SFO" id="qZI-q2-I8p"/>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="0.0"/>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" spacing="0.0" id="stY-pW-Dkb">
+                            <items>
+                                <label alignment="left" text="AA123 Boards" id="Yc7-v6-y3d"/>
+                                <label height="44" alignment="left" text="15:06" id="Uvw-fK-Ce0">
+                                    <color key="textColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="54"/>
+                                </label>
+                                <label alignment="left" text="On time" id="xkl-Df-1kd">
+                                    <color key="textColor" red="0.015686274509803921" green="0.87058823529411766" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="WCY-5f-dlQ">
+                            <items>
+                                <label alignment="left" text="Gate 1A" id="5Oy-pN-Isn"/>
+                                <label alignment="right" text="Seat 64A" id="cl6-zc-2U2"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-64" y="-7"/>
+        </scene>
+    </scenes>
 </document>
