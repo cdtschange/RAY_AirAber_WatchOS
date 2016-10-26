@@ -8,7 +8,7 @@
         <!--Flight-->
         <scene sceneID="yzc-KC-4d0">
             <objects>
-                <controller identifier="Flight" hidesWhenLoading="NO" id="hCy-WA-WEX">
+                <controller identifier="Flight" hidesWhenLoading="NO" id="hCy-WA-WEX" customClass="FlightInterfaceController" customModule="Watch_Extension">
                     <items>
                         <group width="1" alignment="left" id="3N0-qh-SSV">
                             <items>
@@ -45,9 +45,18 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="boardTimeLabel" destination="Uvw-fK-Ce0" id="bpw-1J-ZpB"/>
+                        <outlet property="boardingLabel" destination="Yc7-v6-y3d" id="7Z4-Co-1hS"/>
+                        <outlet property="flightLabel" destination="qxN-Yy-ihV" id="Jec-yY-6sk"/>
+                        <outlet property="gateLabel" destination="5Oy-pN-Isn" id="nHE-Rm-fso"/>
+                        <outlet property="routeLabel" destination="qZI-q2-I8p" id="c44-XL-XEj"/>
+                        <outlet property="seatLabel" destination="cl6-zc-2U2" id="1je-aa-Wxp"/>
+                        <outlet property="statusLabel" destination="xkl-Df-1kd" id="cVP-ku-buR"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-64" y="-7"/>
+            <point key="canvasLocation" x="-37" y="-23"/>
         </scene>
     </scenes>
 </document>
