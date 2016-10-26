@@ -26,6 +26,11 @@ class ScheduleInterfaceController: WKInterfaceController {
     }
   }
   
+  override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+    let flight = flights[rowIndex]
+    presentController(withName: "Flight", context: flight)
+  }
+  
   override func willActivate() {
     // This method is called when watch view controller is about to be visible to user
     super.willActivate()
