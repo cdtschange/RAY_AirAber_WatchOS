@@ -27,8 +27,11 @@ class ScheduleInterfaceController: WKInterfaceController {
   }
   
   override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+//    let flight = flights[rowIndex]
+//    presentController(withName: "Flight", context: flight)
     let flight = flights[rowIndex]
-    presentController(withName: "Flight", context: flight)
+    let controllers = ["Flight", "CheckIn"]
+    presentController(withNames: controllers, contexts: [flight, flight])
   }
   
   override func willActivate() {
