@@ -61,11 +61,11 @@
         <!--Air Aber-->
         <scene sceneID="3Jf-kp-UjD">
             <objects>
-                <controller identifier="Schedule" title="Air Aber" id="EpG-jF-Vi0">
+                <controller identifier="Schedule" title="Air Aber" id="EpG-jF-Vi0" customClass="ScheduleInterfaceController" customModule="Watch_Extension">
                     <items>
                         <table alignment="left" id="g6k-jk-Mq2">
                             <items>
-                                <tableRow id="5p5-cc-0cH">
+                                <tableRow identifier="FlightRow" id="5p5-cc-0cH" customClass="FlightRowController" customModule="Watch_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" spacing="6" id="yEx-wH-eox">
                                         <items>
                                             <separator height="1" heightAdjustment="-4" alignment="left" verticalAlignment="center" id="BXY-u0-G8c">
@@ -100,13 +100,25 @@
                                             </group>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <outlet property="destinationLabel" destination="uWW-W4-0Xi" id="Qsw-70-q0t"/>
+                                        <outlet property="flightNumberLabel" destination="vIp-mW-cuF" id="OgG-wG-LpL"/>
+                                        <outlet property="originLabel" destination="Lde-J4-Jc7" id="Um5-GK-Cas"/>
+                                        <outlet property="planeImage" destination="9Fs-Rp-dN1" id="fxp-sb-Su8"/>
+                                        <outlet property="separator" destination="BXY-u0-G8c" id="0KI-Bo-CGF"/>
+                                        <outlet property="statusLabel" destination="HIx-iB-gxs" id="slz-BW-Jam"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="flightsTable" destination="g6k-jk-Mq2" id="8K2-GL-TSE"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="204" y="-26"/>
+            <point key="canvasLocation" x="-323" y="-20"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
 </document>
