@@ -78,6 +78,16 @@
                                         </label>
                                     </items>
                                 </group>
+                                <button alignment="center" verticalAlignment="center" id="VIX-sb-0le">
+                                    <group key="contentGroup" width="78" height="78" alignment="left" radius="39" id="wbx-0D-9Vr">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Check In" id="a4G-3B-Qlv">
+                                                <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                </button>
                             </items>
                         </group>
                     </items>
